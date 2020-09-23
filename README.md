@@ -83,7 +83,9 @@ As the most REST APIs, the Commander API will follow the standard set of methods
 ### Pre-requisites
 
 1. .Net Core SDK installed;
-2. Visual Studio Code installed.
+2. Visual Studio Code installed;
+3. Microsoft SQL Server Local DB installed;
+4. MS SQl Server - VSCode Extension - installed.
 
 ### Cloning the Repository
 
@@ -91,32 +93,60 @@ As the most REST APIs, the Commander API will follow the standard set of methods
 2. Clone the repository.
 
 ```bash
-> git clone <https://github.com/savaladaojr/CommanderAPI>
+git clone <https://github.com/savaladaojr/CommanderAPI>
 ```
 
 ## Running the API
 
-1. Open the project folder in the Visual Sutdio Code. You should see something like the screenshot below;
+#### Opening the project
+
+1. On the director that you clone the repository, by a command prompt, execute the command to open the Visual Sutdio Code and load the project folder.
+You should see something like the screenshot below.
+
+```sh
+code .
+```
 
 <img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project.png" />
 
-2. Open a Visual Studio Code Terminal and run the command to restore all packages used by the API;
+### Restoring project's dependencies
+
+1. In the Visual Studio Code, open a *Terminal* and run the command to restore all packages used by the API;
 
 ```sh
 dotnet restore
 ```
 
-3. Then rebuild the application;
+### Updating the Database
+
+1. Connect on the SQL Server Local DB:<br/>
+1.1. Create a new database "CommanderDB";<br/>
+1.2. Create new user called "CommanderUser", set it password and set it as a CommanderDB owner;<br/>
+
+2. In the VSCode:<br/>
+2.1. Open the file *"appsettings.json"* and change the *"ConnectionString"* property to reflect your configuration;<br/>
+2.2. Open a new Terminal and run the command to update the database with the project's database migrations.<br/>
+
+```sh
+dotnet ef database update
+```
+
+### Building & Runnin the API
+
+1. Then rebuild the application;
+
 ```sh
 dotnet build
 ```
 <img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project_build_results.png" />
 
-4. Run the API.
+2. Run the API.
+
 ```sh
 dotnet run
 ```
 <img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project_run_results.png" />
+
 
 ## Consuming the API.
 
