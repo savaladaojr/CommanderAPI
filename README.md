@@ -1,6 +1,13 @@
 # Commander API
 > Commander API is a simple ASP.NET Core 3.1 MVC REST API that executes CRUD (Create, Retrieve, Update and Delete) commands on an MS SQL Server Database using Entity Framework Core.
 
+![GitHub language count](https://img.shields.io/github/languages/count/savaladaojr/CommanderAPI)
+![GitHub top language](https://img.shields.io/github/languages/top/savaladaojr/CommanderAPI)
+![.NET Core](https://github.com/savaladaojr/CommanderAPI/workflows/.NET%20Core/badge.svg?branch=master)
+![GitHub issues](https://img.shields.io/github/issues/savaladaojr/CommanderAPI)
+![GitHub issues](https://img.shields.io/github/issues-raw/savaladaojr/commanderAPI)
+
+<br/><br/>
 
 ## Description
 The Commander API stores command line snippets (e.g. dotnet new mvc - to create a new ASP.NET Core Web Application). 
@@ -26,6 +33,7 @@ Application or platform domain, e.g. .Net Core
 - [X] Update a command information
 - [X] Delete an existent command
 
+<br/>
 As the most REST APIs, the Commander API will follow the standard set of methods to Create, Retrieve, Update, and Delete records in the database. So, each functionality could be access as listed in the table below:
 
 <table>
@@ -130,7 +138,5 @@ Exemple of a request to the API:
 4. Push to the branch (e.g. `git push origin feature/fooBar`);
 5. Create a new Pull Request.
 
-
-
 <br/><br/><br/><br/><br/>
-This API was built for learning purposes. I did follow the instructions from the <a href='https://dotnetplaybook.com/develop-a-rest-api-with-net-core/'>Dotnetplaybook</a> website.
+###### This API was built for learning purposes. I did follow the instructions from the <a href='https://dotnetplaybook.com/develop-a-rest-api-with-net-core/'>Dotnetplaybook</a> website.
