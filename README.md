@@ -93,7 +93,7 @@ As the most REST APIs, the Commander API will follow the standard set of methods
 2. Clone the repository.
 
 ```bash
-git clone <https://github.com/savaladaojr/CommanderAPI>
+git clone https://github.com/savaladaojr/CommanderAPI
 ```
 
 ## Running the API
