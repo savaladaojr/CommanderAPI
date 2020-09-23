@@ -7,7 +7,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/savaladaojr/CommanderAPI)
 ![GitHub issues](https://img.shields.io/github/issues-raw/savaladaojr/commanderAPI)
 
-<br/><br/>
+<br/>
 
 ## Description
 The Commander API stores command line snippets (e.g. dotnet new mvc - to create a new ASP.NET Core Web Application). 
