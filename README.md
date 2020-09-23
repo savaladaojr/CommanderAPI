@@ -26,7 +26,7 @@ Application or platform domain, e.g. .Net Core
 - [X] Update a command information
 - [X] Delete an existent command
 
-As the most REST APIs, the Commander API will follow the standard set of methods to Create, Retrieve, Update, and Delete command lines in the database. So, each functionality could be access as listed in the table below:
+As the most REST APIs, the Commander API will follow the standard set of methods to Create, Retrieve, Update, and Delete records in the database. So, each functionality could be access as listed in the table below:
 
 <table>
   <tbody>
@@ -79,8 +79,45 @@ As the most REST APIs, the Commander API will follow the standard set of methods
 
 ### Cloning the Repository
 
-comming soon.
+1. Create a project's directory on your computer;
+2. Clone the repository.
 
+```bash
+> git clone <https://github.com/savaladaojr/CommanderAPI>
+```
+
+## Running the API
+
+1. Open the project folder in the Visual Sutdio Code. You should see something like the screenshot below;
+
+<img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project.png" />
+
+2. Open a Visual Studio Code Terminal and run the command to restore all packages used by the API;
+
+```sh
+dotnet restore
+```
+
+3. Then rebuild the application;
+```sh
+dotnet build
+```
+<img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project_build_results.png" />
+
+4. Run the API.
+```sh
+dotnet run
+```
+<img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project_run_results.png" />
+
+## Consuming the API.
+
+To run some tests on the API, I recommend that you download [Postman](https://www.postman.com/downloads/) or also use a Google Chrome plug-in. You also have another option which is [Insomina](https://insomnia.rest/download/). Both are gonna work and have a free version.
+
+I'm using Postman! So I have already prepared a file with all requests for the API. You can find this file (Commands API.postman_collection.json) in the repository.
+
+Exemple of a request to the API:
+<img alt="Visual Studio Code - Project's structure" title="CommanderAPI" src="./Assets/visualstudiocode_project_run_results.png" />
 
 <br/><br/><br/>
 
